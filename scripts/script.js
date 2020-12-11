@@ -25,7 +25,7 @@ DomElement.prototype.createElement = function() {
 
   if (newDomElement2.selector.startsWith('#')) {  
         let paragraph = document.createElement('p');
-        paragraph.setAttribute('id', `${newDomElement2.selector.substring(1)})`);
+        paragraph.setAttribute('id', `${newDomElement2.selector.substring(1)}`);
         paragraph.style.cssText = `height:${newDomElement2.height}; width:${newDomElement2.width}; 
         background-color:${newDomElement2.bg}; font-size:${newDomElement2.fontSize}`;
         document.body.prepend(paragraph);
